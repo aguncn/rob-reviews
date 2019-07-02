@@ -1,0 +1,14 @@
+---
+applications:
+- name: robreviews
+  memory: 1G
+  random-route: true
+  path: target/rob-reviews-0.0.1-SNAPSHOT.jar
+  env:
+    ENABLE_RATINGS: true
+    SERVICES_DOMAIN: rob.svc.cluster.local
+    REVIEW_TEXT_1: "The awesomeness of exposing a PAS app via istio is better than Shakespeare"
+    REVIEW_TEXT_2: "... Even better than (Francis) Bacon!!"
+    STAR_COLOR: "purple"
+
+
